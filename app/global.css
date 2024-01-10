@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "Quicksilver";
+	src: url("./fonts/Quicksilver-3z2OL.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Excelorate";
+	src: url("./fonts/Excelorate-Font.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "Satoshi";
+	src: url("./fonts/Satoshi-Variable.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Kilo";
+	src: url("./fonts/Kilo.otf") format("opentype");
+}
+
+.navbar {
+	background-image: radial-gradient(#954899, #b267b5);
+}
+
+.name {
+	opacity: 0;
+	transform: translateY(20px);
+	animation: appearAnimation 3s forwards;
+}
+
+@keyframes appearAnimation {
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.purple-dot {
+	background-image: radial-gradient(#954899, #cf9ed1, transparent);
+	transform-origin: calc(200% + 200px) calc(10% - 500px);
+	animation: moveInCircle 25s infinite;
+}
+
+.blue-dot {
+	background-image: radial-gradient(#08659b, #8bd0f9, transparent);
+	transform-origin: calc(50% + 200px) calc(30% - 500px);
+	animation: moveInCircle 40s reverse ease infinite;
+}
+
+.red-dot {
+	background-image: radial-gradient(#fe3c42, transparent);
+	transform-origin: calc(50% - 250px);
+	animation: moveInCircle 20s reverse ease infinite;
+}
+
+.black-dot {
+	background-image: radial-gradient(#9fa2a8, transparent);
+	transform-origin: calc(150% + 10px) calc(50% + 50%);
+	animation: moveInCircle 20s linear infinite;
+}
+
+@media (min-width: 1080px) {
+	.purple-dot2 {
+		transform-origin: (20px, -200px);
+	}
+}
+
+@media (min-width: 1080px) {
+	.red-dot {
+		transform-origin: calc(400% + 200px) calc(5% - 500px);
+	}
+
+	.black-dot {
+		transform-origin: calc(100% + 10px) calc(5% - 100px);
+	}
+}
+
+@keyframes moveInCircle3 {
+	0% {
+		transform: translate(0, 0) rotate(0deg);
+	}
+	25% {
+		transform: translate(100px, 0) rotate(90deg);
+	}
+	50% {
+		transform: translate(0, 100px) rotate(180deg);
+	}
+	75% {
+		transform: translate(-100px, 0) rotate(270deg);
+	}
+	100% {
+		transform: translate(0, -100px) rotate(360deg);
+	}
+}
+
+@keyframes translatePurple {
+	0% {
+		transform: translateX(100vw);
+		transform: rotate(0deg);
+	}
+
+	50% {
+		transform: translateY(-100vh);
+		transform: rotate(180deg);
+	}
+
+	100% {
+		transform: translateX(100vw);
+		transform: rotate(3600deg);
+	}
+}
+
+@keyframes moveInCircle {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	50% {
+		transform: rotate(180deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background-color: #fffdeb;
+}
+
+body::after {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("./nnnoise\ \(3\).svg");
+	background-size: cover;
+	background-position: center;
+	/* opacity: 0.5; */
+	pointer-events: none; /* Evita que la textura afecte a la interacción del usuario */
+	z-index: 1; /* Coloca la capa detrás del contenido principal */
+}
+
+/*  */
