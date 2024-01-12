@@ -110,7 +110,7 @@ const HomePage = async () => {
 								/>
 								<div className="w-[250px] md:w-[300px] h-12 rounded-b-[25px] bg-[#7E3D81]/60 flex flex-row items-center justify-evenly">
 									<Tooltip
-										className="font-[Poppins]"
+										className="font-poppins"
 										showArrow
 										placement="bottom"
 										content="My Spotify">
