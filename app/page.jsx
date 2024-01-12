@@ -101,6 +101,9 @@ const HomePage = async () => {
 						<div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-[100px]">
 							<div className="flex flex-col  justify-center items-center rounded-[25px] shadow-[2px_2px_5px_2px_rgba(0,0,0,0.3)]">
 								<Image
+									quality={100}
+									width={250}
+									height={250}
 									alt="photo"
 									src="https://res.cloudinary.com/dlmqrbnli/image/upload/v1691012542/PORTFOLIO%20IMAGES/IMG_3774-removebg-preview_s8q4tg.png"
 									className="w-[250px] md:w-[300px] h-auto rounded-t-[25px] bg-white/10 backdrop-blur-[25px]"
@@ -172,6 +175,8 @@ const HomePage = async () => {
 														{lasGamePlayed?.name}
 													</span>
 													<Image
+														width={80}
+														height={80}
                                                         alt="image of the last game played"
 														src={lasGamePlayed?.displayImage}
 														className="w-20 h-20 object-cover rounded-medium"
