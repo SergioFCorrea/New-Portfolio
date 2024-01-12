@@ -195,7 +195,7 @@ const HomePage = async () => {
 								</div>
 							</div>
 							<div className="flex flex-col justify-center items-center gap-5 lg:w-auto">
-								<span className="font-[Poppins] font-medium text-[18px] lg:text-xl lg:text-left text-[#B366B7]">
+								<span className="font-poppins font-medium text-[18px] lg:text-xl lg:text-left text-[#B366B7]">
 									Hi, let me tell you about how got into web development and
 									some of my hobbies.
 								</span>
@@ -252,7 +252,7 @@ const HomePage = async () => {
 				{/* ----------------- */}
 
 				{/* CONTACT */}
-				<div className="  backdrop-blur-[9px] w-full h-[300px] flex flex-col justify-center items-center gap-8  overflow-hidden">
+				<div className="  backdrop-blur-[9px] w-full h-auto flex flex-col justify-center items-center gap-8  overflow-hidden">
 					<div className=" flex flex-col md:flex-row justify-center items-center gap-[50px]">
 						<Link href="mailto:sergio.correa.job@gmail.com" target="blank">
 							<div className="bg-gradient-to-br from-[#B366B7]/50 to-[#7E3D81]/50  w-[130px] backdrop-blur-[9px] rounded-md h-[130px] flex justify-center items-center transition-transform hover:duration-200 hover:scale-[105%]">
