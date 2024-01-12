@@ -61,11 +61,11 @@ const Projects = () => {
 				onOpenChange={onOpenChangeModal1}>
 				<ModalContent>
 					<ModalHeader>
-						<span className="text-[#EBD5C4] font-[Poppins] text-center">
+						<span className="text-[#EBD5C4] font-poppins text-center">
 							Managemate
 						</span>
 					</ModalHeader>
-					<ModalBody className="p-5 flex flex-col justify-center items-center font-[Poppins] font-thin gap-6">
+					<ModalBody className="p-5 flex flex-col justify-center items-center font-poppins font-thin gap-6">
 						<div className=" flex flex-col justify-center items-center gap-3">
 							<Image
 								alt="logo"
@@ -197,11 +197,11 @@ const Projects = () => {
 				onOpenChange={onOpenChangeModal2}>
 				<ModalContent>
 					<ModalHeader>
-						<span className="text-[#7c38cd] font-[Poppins] text-center">
+						<span className="text-[#7c38cd] font-poppins text-center">
 							Talent Forge
 						</span>
 					</ModalHeader>
-					<ModalBody className="p-5 flex flex-col justify-center items-center font-[Poppins] font-thin gap-6">
+					<ModalBody className="p-5 flex flex-col justify-center items-center font-poppins font-thin gap-6">
 						<div className=" flex flex-col justify-center items-center gap-3">
                         <Image
 								alt="logo"

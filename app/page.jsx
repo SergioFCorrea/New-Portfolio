@@ -132,7 +132,7 @@ const HomePage = async () => {
 										showArrow
 										placement="bottom"
 										content={
-											<div className="relative h-[120px] w-[200px] bg-black/20 flex justify-center items-center font-[Poppins]">
+											<div className="relative h-[120px] w-[200px] bg-black/20 flex justify-center items-center font-poppins">
 												<Image
                                                     alt="background"
 													src={csm}
@@ -166,7 +166,7 @@ const HomePage = async () => {
 										showArrow
 										placement="bottom"
 										content={
-											<div className="font-[Poppins] w-32 h-[150px] flex flex-col justify-center items-center gap-4 py-3">
+											<div className="font-poppins w-32 h-[150px] flex flex-col justify-center items-center gap-4 py-3">
 												<span className=" text-[#107C10] text-[12px] font-medium text-center">
 													Last game I played
 												</span>
